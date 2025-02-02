@@ -51,12 +51,13 @@ class Engine:
 
                 
    
-    def train(self,data_loader,trade_off):
+    def train(self,data_loader):
         self.model.train()
         final_loss = 0
         truth=[]
         predict=[]
         teacher_trade_off=0
+        trade_off=0.3
       
         for batch_idx, (data,label,task,user) in enumerate(data_loader):
 
@@ -181,7 +182,7 @@ def objective(filename,approach_name,hidden_name,norm_name,modality_name):
             accumulate_acc+=temp_acc_dict[key]
         
         if accumulate_acc>best_accumulate_acc:
-            torch.save(eng.model.state_dict(), filename.replace('log.txt','best'+str(accumulate_acc)+'_'+str(trial.number)+'.pth'))
+            torch.save(eng.model.state_dict(), filename.replace('log.txt','best.pth'))
             best_accumulate_acc=accumulate_acc
             best_acc_dict=temp_acc_dict
             
@@ -204,12 +205,11 @@ if __name__ == '__main__':
     hidden_name=256
     modality_name="all"
 
-    path=f"./Teacher/{approach_name}/{norm_name}/{hidden_name}/{modality_name}"
+    path=f"./Overparameterized_result/"
     if not os.path.exists(path):
         os.makedirs(path)
     filename=path+"/log.txt"
-    with open(filename, 'w') as f:
-        print("prgram start",file=f)
+
     
     objective(filename,approach_name,hidden_name,norm_name,modality_name)
     

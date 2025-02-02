@@ -45,7 +45,7 @@ class Engine:
         self.cross_entropy=nn.CrossEntropyLoss()
         self.approach_name=approach_name
 
-        self.get_loss = mylosses.OurIRM(hidden_size,device,norm_name,input_dim,modality)
+        self.get_loss = mylosses.HHISS(hidden_size,device,norm_name,input_dim,modality)
         
         
    
@@ -169,7 +169,7 @@ def objective(filename,approach_name,amount_name,hidden_name,norm_name,modality_
     device_train = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     model_train.to(device_train)
     
-    model_train.load_state_dict(torch.load(f'./ckpt/Overparameterized_IRM.pth', map_location='cpu'))
+    model_train.load_state_dict(torch.load(f'./ckpts/Overparameterized_IRM.pth', map_location='cpu'))
     
     optimizer_train = optim.Adam(model_train.parameters(), lr=params["LR"])#
 
@@ -188,7 +188,7 @@ def objective(filename,approach_name,amount_name,hidden_name,norm_name,modality_
     
     eng =Engine(model_train,optimizer_train,approach_name,filename,device_train,hidden_size,all_task,all_user,norm_name,input_dim,modality_name)
     
-    round=50
+    rounds=50
     early_stop=10
     best_acc_dict={'control':0,'wesad':0,'predose':0,'postdose':0,'affectiveRoad':0}
     best_accumulate_acc=0
@@ -200,7 +200,7 @@ def objective(filename,approach_name,amount_name,hidden_name,norm_name,modality_
     
     
     write_result=[]
-    while round>0:
+    while rounds>0:
     
         
         train_f1=eng.train(train_loader,trade_off,params["teacher_trade_off"])
@@ -210,7 +210,7 @@ def objective(filename,approach_name,amount_name,hidden_name,norm_name,modality_
         
         if train_f1>threshold:
             eng.prune_model(train_loader,prune_amout,trade_off,params["teacher_trade_off"])
-            round-=1
+            rounds-=1
 
 
             
@@ -219,7 +219,7 @@ def objective(filename,approach_name,amount_name,hidden_name,norm_name,modality_
             dataset_name=loader.dataset.dataset_name
             val_f1,val_acc=eng.evaluate(loader,dataset_name)
             parameter_count=count_parameters(eng.model)
-            write_result.append((e,dataset_name,val_f1,val_acc,parameter_count,params))
+            write_result.append((dataset_name,val_f1,val_acc,parameter_count,params))
 
 
             temp_acc_dict[dataset_name]=val_acc
@@ -252,7 +252,7 @@ if __name__ == '__main__':
  
     
     approach_name='HHISS'
-    amount_idx=0.5
+    amount_name=0.5
     norm_name='standardChange'
     seed=3084
     hidden_name=256
@@ -262,7 +262,7 @@ if __name__ == '__main__':
     
     
 
-    path=f"./result/{approach_name}/{amount_idx}/{norm_name}/{seed}/{hidden_name}/{modality_name}/"
+    path=f"./HHISS_result/"
     if not os.path.exists(path):
         os.makedirs(path)
     filename=path+"/log.txt"
