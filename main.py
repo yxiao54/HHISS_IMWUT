@@ -188,7 +188,7 @@ def objective(filename,approach_name,amount_name,hidden_name,norm_name,modality_
     
     eng =Engine(model_train,optimizer_train,approach_name,filename,device_train,hidden_size,all_task,all_user,norm_name,input_dim,modality_name)
     
-    epoch=50
+    round=50
     early_stop=10
     best_acc_dict={'control':0,'wesad':0,'predose':0,'postdose':0,'affectiveRoad':0}
     best_accumulate_acc=0
@@ -200,7 +200,8 @@ def objective(filename,approach_name,amount_name,hidden_name,norm_name,modality_
     
     
     write_result=[]
-    for e in range(epoch):
+    while round>0:
+    
         
         train_f1=eng.train(train_loader,trade_off,params["teacher_trade_off"])
    
@@ -209,6 +210,7 @@ def objective(filename,approach_name,amount_name,hidden_name,norm_name,modality_
         
         if train_f1>threshold:
             eng.prune_model(train_loader,prune_amout,trade_off,params["teacher_trade_off"])
+            round-=1
 
 
             
@@ -228,10 +230,13 @@ def objective(filename,approach_name,amount_name,hidden_name,norm_name,modality_
             accumulate_acc+=temp_acc_dict[key]
         
         if accumulate_acc>best_accumulate_acc:
-            
+            early_stop=10
             best_accumulate_acc=accumulate_acc
             best_acc_dict=temp_acc_dict
             torch.save(eng.model.state_dict(), filename.replace('log.txt','best.pth'))
+        early_stop-=1
+        if early_stop==0:
+            break
     for key in  best_acc_dict:
         acc=best_acc_dict[key]
 
