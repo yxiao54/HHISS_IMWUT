@@ -168,7 +168,7 @@ class HHISS(nn.Module):
             self.model_teacher = Baseline(hidden=hidden_size,drop=0.2,input_dim=input_dim,num_class=2)
             self.model_teacher.to(device)
     
-            self.model_teacher.load_state_dict(torch.load(f'./ckpts/Overparameterized_IRM.pth', map_location='cpu'))
+            self.model_teacher.load_state_dict(torch.load(f'./ckpt/Overparameterized_IRM.pth', map_location='cpu'))
     
         self.loss_class=nn.CrossEntropyLoss()
         
