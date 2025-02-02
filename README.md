@@ -6,7 +6,8 @@ losses.py defines the loss functions for the HHISS model, as well as for IRM, Vr
 prune_utils.py provides utility functions for subject-wise pruning.<br/>
 myutils.py contains utility functions for change score normalization.<br/>
 model.py defines the PyTorch model used for training.<br/>
-overparameterized.py includes the code to train the overparameterized IRM model.<br/>
+preprocess.py includes the code to extract feature from raw signals.<br/>
+<overparameterized.py includes the code to train the overparameterized IRM model.br/>
 
 The ckpt folder holds the checkpoints for the pre-trained HHISS model and the overparameterized IRM model, as outlined in Algorithm 1 of the main paper.
 
