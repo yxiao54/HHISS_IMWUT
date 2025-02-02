@@ -19,6 +19,11 @@ To extract the features from raw signals
 python preprocess.py
 ```
 
+To train the overparameterized IRM model
+```commandline
+python overparameterized.py
+```
+
 To train the HHISS model
 ```commandline
 python main.py
