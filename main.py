@@ -169,7 +169,7 @@ def objective(filename,approach_name,amount_name,hidden_name,norm_name,modality_
     device_train = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     model_train.to(device_train)
     
-    model_train.load_state_dict(torch.load(f'./ckpts/Overparameterized_IRM.pth', map_location='cpu'))
+    model_train.load_state_dict(torch.load(f'./ckpt/Overparameterized_IRM.pth', map_location='cpu'))
     
     optimizer_train = optim.Adam(model_train.parameters(), lr=params["LR"])#
 
