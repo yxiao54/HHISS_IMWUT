@@ -38,23 +38,22 @@ class Baseline(nn.Module):
 
         
     def forward(self, x): # input: batch_size x 6 x 800
-        #x=self.flat(x)
-        #x=self.bn1(x)
+     
         x=self.fc1(x)
         x=self.drop(x)
         x=self.relu(x)
         
-        #x=self.bn2(x)
+
         x=self.fc2(x)
         x=self.drop(x)
         x=self.relu(x)
         
-        #x=self.bn3(x)
+
         x=self.fc3(x)
         x=self.drop(x)
         x=self.relu(x)
         
-        #x=self.bn4(x)
+  
         x=self.fc4(x)
         x=self.drop(x)
         x=self.softmax(x)
@@ -62,28 +61,4 @@ class Baseline(nn.Module):
 
         
         return x
-    def draw(self, x): # input: batch_size x 6 x 800
-        #x=self.flat(x)
-        #x=self.bn1(x)
-        x=self.fc1(x)
-        x=self.drop(x)
-        x=self.relu(x)
-        
-        #x=self.bn2(x)
-        x=self.fc2(x)
-        x=self.drop(x)
-        x=self.relu(x)
-        
-        #x=self.bn3(x)
-        x=self.fc3(x)
-        x=self.drop(x)
-        x=self.relu(x)
-        emb=x
-        #x=self.bn4(x)
-        x=self.fc4(x)
-        x=self.drop(x)
-        x=self.softmax(x)
 
-
-        
-        return x,emb

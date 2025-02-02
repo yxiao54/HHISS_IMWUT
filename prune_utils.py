@@ -318,8 +318,7 @@ def Prune(trade_off,teacher_trade_off,optimizer,model, all_data,all_label,all_us
     
     
   
-    #all_approach=['erm','irm','vrex','dro','KD','sparseTrain','erm_weight','irm_weight','vrex_weight','dro_weight','erm_gradient','irm_gradient','vrex_gradient',
-    #'dro_gradient','ourIRM','ourDRO','ourVrex','taskIRM','taskDRO','taskVrex','hybridIRM','hybridDRO','hybridVrex']
+   
     if prune_mechanism in ['erm_gradient','irm_gradient','vrex_gradient','dro_gradient']:
         train_set = PruneDataset(all_data, all_label,all_user,all_task)
         data_loader = data_utils.DataLoader(train_set, batch_size=50, shuffle=True)
@@ -332,7 +331,7 @@ def Prune(trade_off,teacher_trade_off,optimizer,model, all_data,all_label,all_us
         model_mask, struct_mask, masked_score = magnitude_prune_unstruct_reverse(optimizer,model,data_loader,prune_amount,device = device)
         model = apply_mask(model, model_mask,struct_mask) 
         mask_forward_only(model, model_mask)
-    elif prune_mechanism in ['ourIRM','ourDRO','ourVrex']:
+    elif prune_mechanism in ['HHISS','ourIRM','ourDRO','ourVrex']:
         unique=np.unique(all_user)
         
         all_masks=[]
