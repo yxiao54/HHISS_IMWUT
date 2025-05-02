@@ -1,0 +1,1815 @@
+Groups compared: control (ref), wesad
+Total features analyzed (both task conditions converged): 325
+Features significant in calm condition: 55
+Features significant in stress condition: 33
+Features significant in both calm and stress conditions: 19
+Common significant features:
+  - HRV_MeanNN
+  - HR_HR_pct_95
+  - HR_l2_entropy
+  - ACC_z_perm_entropy
+  - ACC_y_perm_entropy
+  - ACC_x_kurtosis
+  - ACC_l2_max
+  - ACC_y_svd_entropy
+  - ACC_z_iqr
+  - HR_HR_rms
+  - ACC_z_max
+  - ACC_y_iqr
+  - ACC_y_kurtosis
+  - ACC_z_svd_entropy
+  - HR_HR_kurtosis
+  - TEMP_TEMP_rms
+  - HR_HR_peaks
+  - HRV_TP
+  - HR_HR_entropy
+
+Result summary for significant features:
+================================================================================
+Feature: BVP_BVP_sum (stress condition)
+p-value for Group (wesad vs control): 0.0459
+--------------------------------------------------------------------------------
+               Mixed Linear Model Regression Results
+===================================================================
+Model:                MixedLM    Dependent Variable:    BVP_BVP_sum
+No. Observations:     2456       Method:                REML       
+No. Groups:           62         Scale:                 27.8941    
+Min. group size:      25         Log-Likelihood:        -7712.4904 
+Max. group size:      77         Converged:             Yes        
+Mean group size:      39.6                                         
+-------------------------------------------------------------------
+                        Coef.  Std.Err.   z    P>|z|  [0.025 0.975]
+-------------------------------------------------------------------
+Intercept                0.579    1.260  0.460 0.646  -1.889  3.048
+C(Group_label)[T.wesad] -5.114    2.561 -1.996 0.046 -10.134 -0.093
+Group Var               73.852    2.611                            
+===================================================================
+
+
+Feature: BVP_BVP_energy (stress condition)
+p-value for Group (wesad vs control): 0.0459
+--------------------------------------------------------------------------------
+              Mixed Linear Model Regression Results
+==================================================================
+Model:              MixedLM   Dependent Variable:   BVP_BVP_energy
+No. Observations:   2456      Method:               REML          
+No. Groups:         62        Scale:                27.8941       
+Min. group size:    25        Log-Likelihood:       -7712.4904    
+Max. group size:    77        Converged:            Yes           
+Mean group size:    39.6                                          
+------------------------------------------------------------------
+                        Coef.  Std.Err.   z    P>|z| [0.025 0.975]
+------------------------------------------------------------------
+Intercept               -0.579    1.260 -0.460 0.646 -3.048  1.889
+C(Group_label)[T.wesad]  5.114    2.561  1.996 0.046  0.093 10.134
+Group Var               73.852    2.611                           
+==================================================================
+
+
+Feature: BVP_BVP_skewness (stress condition)
+p-value for Group (wesad vs control): 0.0147
+--------------------------------------------------------------------------------
+              Mixed Linear Model Regression Results
+=================================================================
+Model:             MixedLM  Dependent Variable:  BVP_BVP_skewness
+No. Observations:  2456     Method:              REML            
+No. Groups:        62       Scale:               50.6629         
+Min. group size:   25       Log-Likelihood:      -8419.0082      
+Max. group size:   77       Converged:           Yes             
+Mean group size:   39.6                                          
+-----------------------------------------------------------------
+                        Coef.  Std.Err.   z   P>|z| [0.025 0.975]
+-----------------------------------------------------------------
+Intercept                0.254    1.105 0.230 0.818 -1.913  2.420
+C(Group_label)[T.wesad]  5.489    2.249 2.441 0.015  1.081  9.896
+Group Var               56.144    1.495                          
+=================================================================
+
+
+Feature: BVP_l2_sum (calm condition)
+p-value for Group (wesad vs control): 0.0238
+--------------------------------------------------------------------------------
+              Mixed Linear Model Regression Results
+==================================================================
+Model:                MixedLM    Dependent Variable:    BVP_l2_sum
+No. Observations:     1608       Method:                REML      
+No. Groups:           62         Scale:                 76.6873   
+Min. group size:      6          Log-Likelihood:        -5834.0497
+Max. group size:      75         Converged:             Yes       
+Mean group size:      25.9                                        
+------------------------------------------------------------------
+                        Coef.  Std.Err.   z    P>|z| [0.025 0.975]
+------------------------------------------------------------------
+Intercept               -1.223    0.889 -1.376 0.169 -2.966  0.519
+C(Group_label)[T.wesad]  3.860    1.708  2.260 0.024  0.512  7.208
+Group Var               30.680    0.708                           
+==================================================================
+
+
+Feature: BVP_l2_energy (calm condition)
+p-value for Group (wesad vs control): 0.0238
+--------------------------------------------------------------------------------
+              Mixed Linear Model Regression Results
+==================================================================
+Model:               MixedLM   Dependent Variable:   BVP_l2_energy
+No. Observations:    1608      Method:               REML         
+No. Groups:          62        Scale:                76.6873      
+Min. group size:     6         Log-Likelihood:       -5834.0497   
+Max. group size:     75        Converged:            Yes          
+Mean group size:     25.9                                         
+------------------------------------------------------------------
+                        Coef.  Std.Err.   z    P>|z| [0.025 0.975]
+------------------------------------------------------------------
+Intercept                1.223    0.889  1.376 0.169 -0.519  2.966
+C(Group_label)[T.wesad] -3.860    1.708 -2.260 0.024 -7.208 -0.512
+Group Var               30.680    0.708                           
+==================================================================
+
+
+Feature: BVP_l2_n_sign_changes (stress condition)
+p-value for Group (wesad vs control): 0.0114
+--------------------------------------------------------------------------------
+               Mixed Linear Model Regression Results
+===================================================================
+Model:            MixedLM Dependent Variable: BVP_l2_n_sign_changes
+No. Observations: 2456    Method:             REML                 
+No. Groups:       62      Scale:              40.3504              
+Min. group size:  25      Log-Likelihood:     -8117.8316           
+Max. group size:  77      Converged:          Yes                  
+Mean group size:  39.6                                             
+-------------------------------------------------------------------
+                         Coef.  Std.Err.   z    P>|z| [0.025 0.975]
+-------------------------------------------------------------------
+Intercept                -1.128    0.684 -1.648 0.099 -2.469  0.214
+C(Group_label)[T.wesad]   3.526    1.394  2.530 0.011  0.794  6.257
+Group Var                20.994    0.642                           
+===================================================================
+
+
+Feature: BVP_l2_iqr_5_95 (calm condition)
+p-value for Group (wesad vs control): 0.0364
+--------------------------------------------------------------------------------
+               Mixed Linear Model Regression Results
+====================================================================
+Model:               MixedLM   Dependent Variable:   BVP_l2_iqr_5_95
+No. Observations:    1608      Method:               REML           
+No. Groups:          62        Scale:                1998.9734      
+Min. group size:     6         Log-Likelihood:       -8435.9521     
+Max. group size:     75        Converged:            Yes            
+Mean group size:     25.9                                           
+--------------------------------------------------------------------
+                         Coef.  Std.Err.   z    P>|z|  [0.025 0.975]
+--------------------------------------------------------------------
+Intercept                 8.588    3.499  2.454 0.014   1.730 15.446
+C(Group_label)[T.wesad] -13.482    6.445 -2.092 0.036 -26.113 -0.850
+Group Var               407.802    2.310                            
+====================================================================
+
+
+Feature: BVP_l2_pct_95 (calm condition)
+p-value for Group (wesad vs control): 0.0379
+--------------------------------------------------------------------------------
+              Mixed Linear Model Regression Results
+==================================================================
+Model:               MixedLM   Dependent Variable:   BVP_l2_pct_95
+No. Observations:    1608      Method:               REML         
+No. Groups:          62        Scale:                84.9367      
+Min. group size:     6         Log-Likelihood:       -5913.0737   
+Max. group size:     75        Converged:            Yes          
+Mean group size:     25.9                                         
+------------------------------------------------------------------
+                        Coef.  Std.Err.   z    P>|z| [0.025 0.975]
+------------------------------------------------------------------
+Intercept                1.742    0.891  1.955 0.051 -0.005  3.490
+C(Group_label)[T.wesad] -3.533    1.702 -2.076 0.038 -6.869 -0.197
+Group Var               30.188    0.725                           
+==================================================================
+
+
+Feature: BVP_l2_entropy (stress condition)
+p-value for Group (wesad vs control): 0.0186
+--------------------------------------------------------------------------------
+               Mixed Linear Model Regression Results
+====================================================================
+Model:                MixedLM   Dependent Variable:   BVP_l2_entropy
+No. Observations:     2456      Method:               REML          
+No. Groups:           62        Scale:                837.5303      
+Min. group size:      25        Log-Likelihood:       -11820.7026   
+Max. group size:      77        Converged:            Yes           
+Mean group size:      39.6                                          
+--------------------------------------------------------------------
+                         Coef.  Std.Err.   z    P>|z|  [0.025 0.975]
+--------------------------------------------------------------------
+Intercept                10.736    2.292  4.685 0.000   6.244 15.228
+C(Group_label)[T.wesad] -11.001    4.673 -2.354 0.019 -20.160 -1.842
+Group Var               225.720    1.586                            
+====================================================================
+
+
+Feature: HR_HR_kurtosis (calm condition)
+p-value for Group (wesad vs control): 0.0121
+--------------------------------------------------------------------------------
+              Mixed Linear Model Regression Results
+==================================================================
+Model:              MixedLM   Dependent Variable:   HR_HR_kurtosis
+No. Observations:   1608      Method:               REML          
+No. Groups:         62        Scale:                18.8234       
+Min. group size:    6         Log-Likelihood:       -4696.6062    
+Max. group size:    75        Converged:            Yes           
+Mean group size:    25.9                                          
+------------------------------------------------------------------
+                        Coef.  Std.Err.   z    P>|z| [0.025 0.975]
+------------------------------------------------------------------
+Intercept                0.514    0.378  1.357 0.175 -0.228  1.255
+C(Group_label)[T.wesad] -1.786    0.711 -2.510 0.012 -3.180 -0.391
+Group Var                5.145    0.271                           
+==================================================================
+
+
+Feature: HR_HR_kurtosis (stress condition)
+p-value for Group (wesad vs control): 0.0000
+--------------------------------------------------------------------------------
+              Mixed Linear Model Regression Results
+==================================================================
+Model:              MixedLM   Dependent Variable:   HR_HR_kurtosis
+No. Observations:   2456      Method:               REML          
+No. Groups:         62        Scale:                104.1230      
+Min. group size:    25        Log-Likelihood:       -9232.2751    
+Max. group size:    77        Converged:            Yes           
+Mean group size:    39.6                                          
+------------------------------------------------------------------
+                        Coef.  Std.Err.   z    P>|z| [0.025 0.975]
+------------------------------------------------------------------
+Intercept                3.418    0.487  7.019 0.000  2.464  4.373
+C(Group_label)[T.wesad] -4.839    0.998 -4.848 0.000 -6.796 -2.883
+Group Var                8.526    0.204                           
+==================================================================
+
+
+Feature: HR_HR_peaks (calm condition)
+p-value for Group (wesad vs control): 0.0013
+--------------------------------------------------------------------------------
+              Mixed Linear Model Regression Results
+==================================================================
+Model:               MixedLM    Dependent Variable:    HR_HR_peaks
+No. Observations:    1608       Method:                REML       
+No. Groups:          62         Scale:                 46.8028    
+Min. group size:     6          Log-Likelihood:        -5455.2989 
+Max. group size:     75         Converged:             Yes        
+Mean group size:     25.9                                         
+------------------------------------------------------------------
+                        Coef.  Std.Err.   z    P>|z| [0.025 0.975]
+------------------------------------------------------------------
+Intercept                1.780    0.927  1.921 0.055 -0.036  3.596
+C(Group_label)[T.wesad] -5.854    1.826 -3.206 0.001 -9.433 -2.275
+Group Var               36.386    1.047                           
+==================================================================
+
+
+Feature: HR_HR_peaks (stress condition)
+p-value for Group (wesad vs control): 0.0000
+--------------------------------------------------------------------------------
+               Mixed Linear Model Regression Results
+===================================================================
+Model:                MixedLM    Dependent Variable:    HR_HR_peaks
+No. Observations:     2456       Method:                REML       
+No. Groups:           62         Scale:                 193.3652   
+Min. group size:      25         Log-Likelihood:        -10017.3885
+Max. group size:      77         Converged:             Yes        
+Mean group size:      39.6                                         
+-------------------------------------------------------------------
+                        Coef.  Std.Err.   z    P>|z|  [0.025 0.975]
+-------------------------------------------------------------------
+Intercept                6.445    1.018  6.329 0.000   4.449  8.441
+C(Group_label)[T.wesad] -9.513    2.077 -4.579 0.000 -13.585 -5.441
+Group Var               43.861    0.650                            
+===================================================================
+
+
+Feature: HR_HR_rms (calm condition)
+p-value for Group (wesad vs control): 0.0143
+--------------------------------------------------------------------------------
+              Mixed Linear Model Regression Results
+==================================================================
+Model:                MixedLM    Dependent Variable:    HR_HR_rms 
+No. Observations:     1608       Method:                REML      
+No. Groups:           62         Scale:                 59.0552   
+Min. group size:      6          Log-Likelihood:        -5653.6371
+Max. group size:      75         Converged:             Yes       
+Mean group size:      25.9                                        
+------------------------------------------------------------------
+                        Coef.  Std.Err.   z    P>|z| [0.025 0.975]
+------------------------------------------------------------------
+Intercept               -2.321    1.259 -1.843 0.065 -4.789  0.147
+C(Group_label)[T.wesad]  6.143    2.507  2.451 0.014  1.230 11.056
+Group Var               69.518    1.754                           
+==================================================================
+
+
+Feature: HR_HR_rms (stress condition)
+p-value for Group (wesad vs control): 0.0115
+--------------------------------------------------------------------------------
+               Mixed Linear Model Regression Results
+====================================================================
+Model:                 MixedLM    Dependent Variable:    HR_HR_rms  
+No. Observations:      2456       Method:                REML       
+No. Groups:            62         Scale:                 233.7379   
+Min. group size:       25         Log-Likelihood:        -10292.6333
+Max. group size:       77         Converged:             Yes        
+Mean group size:       39.6                                         
+--------------------------------------------------------------------
+                         Coef.  Std.Err.   z    P>|z|  [0.025 0.975]
+--------------------------------------------------------------------
+Intercept                -8.342    2.279 -3.661 0.000 -12.808 -3.876
+C(Group_label)[T.wesad]  11.723    4.636  2.528 0.011   2.636 20.810
+Group Var               238.111    2.954                            
+====================================================================
+
+
+Feature: HR_HR_pct_95 (calm condition)
+p-value for Group (wesad vs control): 0.0146
+--------------------------------------------------------------------------------
+               Mixed Linear Model Regression Results
+====================================================================
+Model:                MixedLM    Dependent Variable:    HR_HR_pct_95
+No. Observations:     1608       Method:                REML        
+No. Groups:           62         Scale:                 187.9670    
+Min. group size:      6          Log-Likelihood:        -6567.4569  
+Max. group size:      75         Converged:             Yes         
+Mean group size:      25.9                                          
+--------------------------------------------------------------------
+                         Coef.  Std.Err.   z    P>|z|  [0.025 0.975]
+--------------------------------------------------------------------
+Intercept                 1.678    1.732  0.969 0.333  -1.717  5.072
+C(Group_label)[T.wesad]  -8.294    3.396 -2.442 0.015 -14.951 -1.637
+Group Var               125.055    1.756                            
+====================================================================
+
+
+Feature: HR_HR_pct_95 (stress condition)
+p-value for Group (wesad vs control): 0.0133
+--------------------------------------------------------------------------------
+               Mixed Linear Model Regression Results
+====================================================================
+Model:                MixedLM    Dependent Variable:    HR_HR_pct_95
+No. Observations:     2456       Method:                REML        
+No. Groups:           62         Scale:                 346.8217    
+Min. group size:      25         Log-Likelihood:        -10784.1464 
+Max. group size:      77         Converged:             Yes         
+Mean group size:      39.6                                          
+--------------------------------------------------------------------
+                         Coef.  Std.Err.   z    P>|z|  [0.025 0.975]
+--------------------------------------------------------------------
+Intercept                 4.149    3.136  1.323 0.186  -1.998 10.296
+C(Group_label)[T.wesad] -15.792    6.380 -2.475 0.013 -28.297 -3.287
+Group Var               453.519    4.589                            
+====================================================================
+
+
+Feature: HR_HR_entropy (calm condition)
+p-value for Group (wesad vs control): 0.0054
+--------------------------------------------------------------------------------
+               Mixed Linear Model Regression Results
+===================================================================
+Model:                MixedLM   Dependent Variable:   HR_HR_entropy
+No. Observations:     1608      Method:               REML         
+No. Groups:           62        Scale:                352.5112     
+Min. group size:      6         Log-Likelihood:       -7045.3554   
+Max. group size:      75        Converged:            Yes          
+Mean group size:      25.9                                         
+-------------------------------------------------------------------
+                        Coef.  Std.Err.   z    P>|z|  [0.025 0.975]
+-------------------------------------------------------------------
+Intercept                5.199    1.537  3.383 0.001   2.187  8.211
+C(Group_label)[T.wesad] -7.940    2.856 -2.780 0.005 -13.538 -2.342
+Group Var               81.370    1.029                            
+===================================================================
+
+
+Feature: HR_HR_entropy (stress condition)
+p-value for Group (wesad vs control): 0.0037
+--------------------------------------------------------------------------------
+               Mixed Linear Model Regression Results
+====================================================================
+Model:               MixedLM    Dependent Variable:    HR_HR_entropy
+No. Observations:    2456       Method:                REML         
+No. Groups:          62         Scale:                 839.8365     
+Min. group size:     25         Log-Likelihood:        -11824.5091  
+Max. group size:     77         Converged:             Yes          
+Mean group size:     39.6                                           
+--------------------------------------------------------------------
+                         Coef.  Std.Err.   z    P>|z|  [0.025 0.975]
+--------------------------------------------------------------------
+Intercept                12.037    2.312  5.207 0.000   7.507 16.568
+C(Group_label)[T.wesad] -13.697    4.713 -2.906 0.004 -22.935 -4.459
+Group Var               229.944    1.619                            
+====================================================================
+
+
+Feature: HR_l2_kurtosis (stress condition)
+p-value for Group (wesad vs control): 0.0007
+--------------------------------------------------------------------------------
+              Mixed Linear Model Regression Results
+==================================================================
+Model:              MixedLM   Dependent Variable:   HR_l2_kurtosis
+No. Observations:   2456      Method:               REML          
+No. Groups:         62        Scale:                293.4766      
+Min. group size:    25        Log-Likelihood:       -10508.2924   
+Max. group size:    77        Converged:            Yes           
+Mean group size:    39.6                                          
+------------------------------------------------------------------
+                        Coef.  Std.Err.   z    P>|z| [0.025 0.975]
+------------------------------------------------------------------
+Intercept                5.141    0.883  5.825 0.000  3.411  6.871
+C(Group_label)[T.wesad] -6.160    1.807 -3.409 0.001 -9.702 -2.619
+Group Var               29.226    0.399                           
+==================================================================
+
+
+Feature: HR_l2_pct_5 (calm condition)
+p-value for Group (wesad vs control): 0.0006
+--------------------------------------------------------------------------------
+              Mixed Linear Model Regression Results
+==================================================================
+Model:               MixedLM    Dependent Variable:    HR_l2_pct_5
+No. Observations:    1608       Method:                REML       
+No. Groups:          62         Scale:                 112.1690   
+Min. group size:     6          Log-Likelihood:        -6128.7842 
+Max. group size:     75         Converged:             Yes        
+Mean group size:     25.9                                         
+------------------------------------------------------------------
+                        Coef.  Std.Err.   z    P>|z| [0.025 0.975]
+------------------------------------------------------------------
+Intercept               -1.884    0.908 -2.076 0.038 -3.664 -0.105
+C(Group_label)[T.wesad]  5.808    1.702  3.413 0.001  2.473  9.143
+Group Var               29.291    0.617                           
+==================================================================
+
+
+Feature: HR_l2_entropy (calm condition)
+p-value for Group (wesad vs control): 0.0352
+--------------------------------------------------------------------------------
+              Mixed Linear Model Regression Results
+==================================================================
+Model:               MixedLM   Dependent Variable:   HR_l2_entropy
+No. Observations:    1608      Method:               REML         
+No. Groups:          62        Scale:                105.0821     
+Min. group size:     6         Log-Likelihood:       -6093.2340   
+Max. group size:     75        Converged:            Yes          
+Mean group size:     25.9                                         
+------------------------------------------------------------------
+                        Coef.  Std.Err.   z    P>|z| [0.025 0.975]
+------------------------------------------------------------------
+Intercept                3.095    1.151  2.689 0.007  0.840  5.351
+C(Group_label)[T.wesad] -4.707    2.235 -2.106 0.035 -9.087 -0.327
+Group Var               53.369    1.082                           
+==================================================================
+
+
+Feature: HR_l2_entropy (stress condition)
+p-value for Group (wesad vs control): 0.0319
+--------------------------------------------------------------------------------
+               Mixed Linear Model Regression Results
+====================================================================
+Model:               MixedLM    Dependent Variable:    HR_l2_entropy
+No. Observations:    2456       Method:                REML         
+No. Groups:          62         Scale:                 634.2895     
+Min. group size:     25         Log-Likelihood:        -11483.1808  
+Max. group size:     77         Converged:             Yes          
+Mean group size:     39.6                                           
+--------------------------------------------------------------------
+                         Coef.  Std.Err.   z    P>|z|  [0.025 0.975]
+--------------------------------------------------------------------
+Intercept                 9.604    2.115  4.540 0.000   5.458 13.750
+C(Group_label)[T.wesad]  -9.252    4.312 -2.146 0.032 -17.703 -0.801
+Group Var               194.301    1.554                            
+====================================================================
+
+
+Feature: TEMP_TEMP_min (calm condition)
+p-value for Group (wesad vs control): 0.0161
+--------------------------------------------------------------------------------
+              Mixed Linear Model Regression Results
+==================================================================
+Model:               MixedLM   Dependent Variable:   TEMP_TEMP_min
+No. Observations:    1608      Method:               REML         
+No. Groups:          62        Scale:                38.3695      
+Min. group size:     6         Log-Likelihood:       -5276.9417   
+Max. group size:     75        Converged:            Yes          
+Mean group size:     25.9                                         
+------------------------------------------------------------------
+                        Coef.  Std.Err.   z    P>|z| [0.025 0.975]
+------------------------------------------------------------------
+Intercept               -1.435    0.618 -2.320 0.020 -2.646 -0.223
+C(Group_label)[T.wesad] -2.854    1.185 -2.407 0.016 -5.177 -0.530
+Group Var               14.734    0.489                           
+==================================================================
+
+
+Feature: TEMP_TEMP_kurtosis (stress condition)
+p-value for Group (wesad vs control): 0.0058
+--------------------------------------------------------------------------------
+              Mixed Linear Model Regression Results
+==================================================================
+Model:              MixedLM Dependent Variable: TEMP_TEMP_kurtosis
+No. Observations:   2456    Method:             REML              
+No. Groups:         62      Scale:              115.0740          
+Min. group size:    25      Log-Likelihood:     -9369.2388        
+Max. group size:    77      Converged:          Yes               
+Mean group size:    39.6                                          
+------------------------------------------------------------------
+                        Coef.  Std.Err.   z    P>|z| [0.025 0.975]
+------------------------------------------------------------------
+Intercept                3.413    0.650  5.250 0.000  2.139  4.687
+C(Group_label)[T.wesad] -3.666    1.328 -2.760 0.006 -6.269 -1.062
+Group Var               16.959    0.342                           
+==================================================================
+
+
+Feature: TEMP_TEMP_rms (calm condition)
+p-value for Group (wesad vs control): 0.0043
+--------------------------------------------------------------------------------
+              Mixed Linear Model Regression Results
+==================================================================
+Model:               MixedLM   Dependent Variable:   TEMP_TEMP_rms
+No. Observations:    1608      Method:               REML         
+No. Groups:          62        Scale:                111.7674     
+Min. group size:     6         Log-Likelihood:       -6144.7468   
+Max. group size:     75        Converged:            Yes          
+Mean group size:     25.9                                         
+------------------------------------------------------------------
+                        Coef.  Std.Err.   z    P>|z| [0.025 0.975]
+------------------------------------------------------------------
+Intercept               -0.464    1.226 -0.378 0.705 -2.866  1.939
+C(Group_label)[T.wesad]  6.814    2.387  2.854 0.004  2.135 11.492
+Group Var               61.162    1.145                           
+==================================================================
+
+
+Feature: TEMP_TEMP_rms (stress condition)
+p-value for Group (wesad vs control): 0.0026
+--------------------------------------------------------------------------------
+               Mixed Linear Model Regression Results
+====================================================================
+Model:               MixedLM    Dependent Variable:    TEMP_TEMP_rms
+No. Observations:    2456       Method:                REML         
+No. Groups:          62         Scale:                 657.0128     
+Min. group size:     25         Log-Likelihood:        -11531.0799  
+Max. group size:     77         Converged:             Yes          
+Mean group size:     39.6                                           
+--------------------------------------------------------------------
+                         Coef.  Std.Err.   z    P>|z|  [0.025 0.975]
+--------------------------------------------------------------------
+Intercept               -10.195    2.329 -4.377 0.000 -14.760 -5.630
+C(Group_label)[T.wesad]  14.271    4.746  3.007 0.003   4.970 23.573
+Group Var               238.366    1.836                            
+====================================================================
+
+
+Feature: TEMP_TEMP_pct_5 (calm condition)
+p-value for Group (wesad vs control): 0.0243
+--------------------------------------------------------------------------------
+              Mixed Linear Model Regression Results
+==================================================================
+Model:               MixedLM  Dependent Variable:  TEMP_TEMP_pct_5
+No. Observations:    1608     Method:              REML           
+No. Groups:          62       Scale:               165.4776       
+Min. group size:     6        Log-Likelihood:      -6460.7836     
+Max. group size:     75       Converged:           Yes            
+Mean group size:     25.9                                         
+------------------------------------------------------------------
+                        Coef.  Std.Err.   z    P>|z| [0.025 0.975]
+------------------------------------------------------------------
+Intercept               -3.942    1.514 -2.603 0.009 -6.909 -0.974
+C(Group_label)[T.wesad]  6.650    2.953  2.252 0.024  0.863 12.437
+Group Var               93.743    1.541                           
+==================================================================
+
+
+Feature: TEMP_l2_iqr_5_95 (calm condition)
+p-value for Group (wesad vs control): 0.0014
+--------------------------------------------------------------------------------
+               Mixed Linear Model Regression Results
+===================================================================
+Model:               MixedLM  Dependent Variable:  TEMP_l2_iqr_5_95
+No. Observations:    1608     Method:              REML            
+No. Groups:          62       Scale:               78.5538         
+Min. group size:     6        Log-Likelihood:      -5862.6007      
+Max. group size:     75       Converged:           Yes             
+Mean group size:     25.9                                          
+-------------------------------------------------------------------
+                        Coef.  Std.Err.   z    P>|z|  [0.025 0.975]
+-------------------------------------------------------------------
+Intercept                2.141    1.045  2.049 0.040   0.093  4.188
+C(Group_label)[T.wesad] -6.503    2.038 -3.192 0.001 -10.497 -2.510
+Group Var               44.656    1.019                            
+===================================================================
+
+
+Feature: ACC_x_mean (stress condition)
+p-value for Group (wesad vs control): 0.0062
+--------------------------------------------------------------------------------
+              Mixed Linear Model Regression Results
+==================================================================
+Model:                MixedLM    Dependent Variable:    ACC_x_mean
+No. Observations:     2456       Method:                REML      
+No. Groups:           62         Scale:                 5.2145    
+Min. group size:      25         Log-Likelihood:        -5575.4863
+Max. group size:      77         Converged:             Yes       
+Mean group size:      39.6                                        
+------------------------------------------------------------------
+                        Coef.  Std.Err.   z    P>|z| [0.025 0.975]
+------------------------------------------------------------------
+Intercept               -0.259    0.145 -1.784 0.074 -0.543  0.025
+C(Group_label)[T.wesad] -0.811    0.296 -2.740 0.006 -1.391 -0.231
+Group Var                0.855    0.081                           
+==================================================================
+
+
+Feature: ACC_x_std (stress condition)
+p-value for Group (wesad vs control): 0.0050
+--------------------------------------------------------------------------------
+              Mixed Linear Model Regression Results
+==================================================================
+Model:                MixedLM    Dependent Variable:    ACC_x_std 
+No. Observations:     2456       Method:                REML      
+No. Groups:           62         Scale:                 43.7931   
+Min. group size:      25         Log-Likelihood:        -8188.8829
+Max. group size:      77         Converged:             Yes       
+Mean group size:      39.6                                        
+------------------------------------------------------------------
+                        Coef.  Std.Err.   z    P>|z| [0.025 0.975]
+------------------------------------------------------------------
+Intercept                1.532    0.436  3.510 0.000  0.676  2.387
+C(Group_label)[T.wesad] -2.502    0.891 -2.808 0.005 -4.248 -0.756
+Group Var                7.844    0.250                           
+==================================================================
+
+
+Feature: ACC_x_min (calm condition)
+p-value for Group (wesad vs control): 0.0121
+--------------------------------------------------------------------------------
+              Mixed Linear Model Regression Results
+==================================================================
+Model:                MixedLM    Dependent Variable:    ACC_x_min 
+No. Observations:     1608       Method:                REML      
+No. Groups:           62         Scale:                 2.0292    
+Min. group size:      6          Log-Likelihood:        -2899.7790
+Max. group size:      75         Converged:             Yes       
+Mean group size:      25.9                                        
+------------------------------------------------------------------
+                        Coef.  Std.Err.   z    P>|z| [0.025 0.975]
+------------------------------------------------------------------
+Intercept               -0.038    0.109 -0.345 0.730 -0.252  0.176
+C(Group_label)[T.wesad] -0.502    0.200 -2.508 0.012 -0.895 -0.110
+Group Var                0.391    0.057                           
+==================================================================
+
+
+Feature: ACC_x_ptp (calm condition)
+p-value for Group (wesad vs control): 0.0131
+--------------------------------------------------------------------------------
+               Mixed Linear Model Regression Results
+===================================================================
+Model:                 MixedLM    Dependent Variable:    ACC_x_ptp 
+No. Observations:      1608       Method:                REML      
+No. Groups:            62         Scale:                 67.2874   
+Min. group size:       6          Log-Likelihood:        -5750.6327
+Max. group size:       75         Converged:             Yes       
+Mean group size:       25.9                                        
+-------------------------------------------------------------------
+                        Coef.  Std.Err.   z    P>|z|  [0.025 0.975]
+-------------------------------------------------------------------
+Intercept                2.360    1.183  1.996 0.046   0.042  4.678
+C(Group_label)[T.wesad] -5.804    2.339 -2.481 0.013 -10.390 -1.219
+Group Var               60.037    1.442                            
+===================================================================
+
+
+Feature: ACC_x_kurtosis (calm condition)
+p-value for Group (wesad vs control): 0.0261
+--------------------------------------------------------------------------------
+              Mixed Linear Model Regression Results
+==================================================================
+Model:              MixedLM   Dependent Variable:   ACC_x_kurtosis
+No. Observations:   1608      Method:               REML          
+No. Groups:         62        Scale:                45.5258       
+Min. group size:    6         Log-Likelihood:       -5423.8665    
+Max. group size:    75        Converged:            Yes           
+Mean group size:    25.9                                          
+------------------------------------------------------------------
+                        Coef.  Std.Err.   z    P>|z| [0.025 0.975]
+------------------------------------------------------------------
+Intercept                1.555    0.786  1.977 0.048  0.013  3.096
+C(Group_label)[T.wesad] -3.410    1.532 -2.225 0.026 -6.414 -0.407
+Group Var               25.218    0.772                           
+==================================================================
+
+
+Feature: ACC_x_kurtosis (stress condition)
+p-value for Group (wesad vs control): 0.0354
+--------------------------------------------------------------------------------
+              Mixed Linear Model Regression Results
+=================================================================
+Model:               MixedLM  Dependent Variable:  ACC_x_kurtosis
+No. Observations:    2456     Method:              REML          
+No. Groups:          62       Scale:               100.8899      
+Min. group size:     25       Log-Likelihood:      -9254.4820    
+Max. group size:     77       Converged:           Yes           
+Mean group size:     39.6                                        
+-----------------------------------------------------------------
+                        Coef.  Std.Err.   z   P>|z| [0.025 0.975]
+-----------------------------------------------------------------
+Intercept                2.378    1.326 1.793 0.073 -0.222  4.977
+C(Group_label)[T.wesad]  5.677    2.699 2.103 0.035  0.387 10.967
+Group Var               80.120    1.519                          
+=================================================================
+
+
+Feature: ACC_x_peaks (calm condition)
+p-value for Group (wesad vs control): 0.0366
+--------------------------------------------------------------------------------
+              Mixed Linear Model Regression Results
+==================================================================
+Model:               MixedLM    Dependent Variable:    ACC_x_peaks
+No. Observations:    1608       Method:                REML       
+No. Groups:          62         Scale:                 68.6937    
+Min. group size:     6          Log-Likelihood:        -5756.6878 
+Max. group size:     75         Converged:             Yes        
+Mean group size:     25.9                                         
+------------------------------------------------------------------
+                        Coef.  Std.Err.   z    P>|z| [0.025 0.975]
+------------------------------------------------------------------
+Intercept                2.465    1.006  2.450 0.014  0.493  4.436
+C(Group_label)[T.wesad] -4.111    1.967 -2.091 0.037 -7.966 -0.257
+Group Var               41.737    1.039                           
+==================================================================
+
+
+Feature: ACC_x_n_sign_changes (calm condition)
+p-value for Group (wesad vs control): 0.0004
+--------------------------------------------------------------------------------
+              Mixed Linear Model Regression Results
+==================================================================
+Model:            MixedLM Dependent Variable: ACC_x_n_sign_changes
+No. Observations: 1608    Method:             REML                
+No. Groups:       62      Scale:              45.7774             
+Min. group size:  6       Log-Likelihood:     -5410.6994          
+Max. group size:  75      Converged:          Yes                 
+Mean group size:  25.9                                            
+------------------------------------------------------------------
+                        Coef.  Std.Err.   z    P>|z| [0.025 0.975]
+------------------------------------------------------------------
+Intercept                1.027    0.594  1.728 0.084 -0.138  2.192
+C(Group_label)[T.wesad] -3.978    1.119 -3.555 0.000 -6.172 -1.785
+Group Var               12.760    0.392                           
+==================================================================
+
+
+Feature: ACC_x_iqr_5_95 (calm condition)
+p-value for Group (wesad vs control): 0.0014
+--------------------------------------------------------------------------------
+               Mixed Linear Model Regression Results
+===================================================================
+Model:               MixedLM   Dependent Variable:   ACC_x_iqr_5_95
+No. Observations:    1608      Method:               REML          
+No. Groups:          62        Scale:                78.5538       
+Min. group size:     6         Log-Likelihood:       -5862.6007    
+Max. group size:     75        Converged:            Yes           
+Mean group size:     25.9                                          
+-------------------------------------------------------------------
+                        Coef.  Std.Err.   z    P>|z|  [0.025 0.975]
+-------------------------------------------------------------------
+Intercept                2.141    1.045  2.049 0.040   0.093  4.188
+C(Group_label)[T.wesad] -6.503    2.038 -3.192 0.001 -10.497 -2.510
+Group Var               44.656    1.019                            
+===================================================================
+
+
+Feature: ACC_y_mean (stress condition)
+p-value for Group (wesad vs control): 0.0062
+--------------------------------------------------------------------------------
+              Mixed Linear Model Regression Results
+==================================================================
+Model:                MixedLM    Dependent Variable:    ACC_y_mean
+No. Observations:     2456       Method:                REML      
+No. Groups:           62         Scale:                 5.2145    
+Min. group size:      25         Log-Likelihood:        -5575.4863
+Max. group size:      77         Converged:             Yes       
+Mean group size:      39.6                                        
+------------------------------------------------------------------
+                        Coef.  Std.Err.   z    P>|z| [0.025 0.975]
+------------------------------------------------------------------
+Intercept               -0.259    0.145 -1.784 0.074 -0.543  0.025
+C(Group_label)[T.wesad] -0.811    0.296 -2.740 0.006 -1.391 -0.231
+Group Var                0.855    0.081                           
+==================================================================
+
+
+Feature: ACC_y_std (stress condition)
+p-value for Group (wesad vs control): 0.0050
+--------------------------------------------------------------------------------
+              Mixed Linear Model Regression Results
+==================================================================
+Model:                MixedLM    Dependent Variable:    ACC_y_std 
+No. Observations:     2456       Method:                REML      
+No. Groups:           62         Scale:                 43.7931   
+Min. group size:      25         Log-Likelihood:        -8188.8829
+Max. group size:      77         Converged:             Yes       
+Mean group size:      39.6                                        
+------------------------------------------------------------------
+                        Coef.  Std.Err.   z    P>|z| [0.025 0.975]
+------------------------------------------------------------------
+Intercept                1.532    0.436  3.510 0.000  0.676  2.387
+C(Group_label)[T.wesad] -2.502    0.891 -2.808 0.005 -4.248 -0.756
+Group Var                7.844    0.250                           
+==================================================================
+
+
+Feature: ACC_y_min (calm condition)
+p-value for Group (wesad vs control): 0.0121
+--------------------------------------------------------------------------------
+              Mixed Linear Model Regression Results
+==================================================================
+Model:                MixedLM    Dependent Variable:    ACC_y_min 
+No. Observations:     1608       Method:                REML      
+No. Groups:           62         Scale:                 2.0292    
+Min. group size:      6          Log-Likelihood:        -2899.7790
+Max. group size:      75         Converged:             Yes       
+Mean group size:      25.9                                        
+------------------------------------------------------------------
+                        Coef.  Std.Err.   z    P>|z| [0.025 0.975]
+------------------------------------------------------------------
+Intercept               -0.038    0.109 -0.345 0.730 -0.252  0.176
+C(Group_label)[T.wesad] -0.502    0.200 -2.508 0.012 -0.895 -0.110
+Group Var                0.391    0.057                           
+==================================================================
+
+
+Feature: ACC_y_ptp (calm condition)
+p-value for Group (wesad vs control): 0.0131
+--------------------------------------------------------------------------------
+               Mixed Linear Model Regression Results
+===================================================================
+Model:                 MixedLM    Dependent Variable:    ACC_y_ptp 
+No. Observations:      1608       Method:                REML      
+No. Groups:            62         Scale:                 67.2874   
+Min. group size:       6          Log-Likelihood:        -5750.6327
+Max. group size:       75         Converged:             Yes       
+Mean group size:       25.9                                        
+-------------------------------------------------------------------
+                        Coef.  Std.Err.   z    P>|z|  [0.025 0.975]
+-------------------------------------------------------------------
+Intercept                2.360    1.183  1.996 0.046   0.042  4.678
+C(Group_label)[T.wesad] -5.804    2.339 -2.481 0.013 -10.390 -1.219
+Group Var               60.037    1.442                            
+===================================================================
+
+
+Feature: ACC_y_kurtosis (calm condition)
+p-value for Group (wesad vs control): 0.0261
+--------------------------------------------------------------------------------
+              Mixed Linear Model Regression Results
+==================================================================
+Model:              MixedLM   Dependent Variable:   ACC_y_kurtosis
+No. Observations:   1608      Method:               REML          
+No. Groups:         62        Scale:                45.5258       
+Min. group size:    6         Log-Likelihood:       -5423.8665    
+Max. group size:    75        Converged:            Yes           
+Mean group size:    25.9                                          
+------------------------------------------------------------------
+                        Coef.  Std.Err.   z    P>|z| [0.025 0.975]
+------------------------------------------------------------------
+Intercept                1.555    0.786  1.977 0.048  0.013  3.096
+C(Group_label)[T.wesad] -3.410    1.532 -2.225 0.026 -6.414 -0.407
+Group Var               25.218    0.772                           
+==================================================================
+
+
+Feature: ACC_y_kurtosis (stress condition)
+p-value for Group (wesad vs control): 0.0354
+--------------------------------------------------------------------------------
+              Mixed Linear Model Regression Results
+=================================================================
+Model:               MixedLM  Dependent Variable:  ACC_y_kurtosis
+No. Observations:    2456     Method:              REML          
+No. Groups:          62       Scale:               100.8899      
+Min. group size:     25       Log-Likelihood:      -9254.4820    
+Max. group size:     77       Converged:           Yes           
+Mean group size:     39.6                                        
+-----------------------------------------------------------------
+                        Coef.  Std.Err.   z   P>|z| [0.025 0.975]
+-----------------------------------------------------------------
+Intercept                2.378    1.326 1.793 0.073 -0.222  4.977
+C(Group_label)[T.wesad]  5.677    2.699 2.103 0.035  0.387 10.967
+Group Var               80.120    1.519                          
+=================================================================
+
+
+Feature: ACC_y_peaks (calm condition)
+p-value for Group (wesad vs control): 0.0366
+--------------------------------------------------------------------------------
+              Mixed Linear Model Regression Results
+==================================================================
+Model:               MixedLM    Dependent Variable:    ACC_y_peaks
+No. Observations:    1608       Method:                REML       
+No. Groups:          62         Scale:                 68.6937    
+Min. group size:     6          Log-Likelihood:        -5756.6878 
+Max. group size:     75         Converged:             Yes        
+Mean group size:     25.9                                         
+------------------------------------------------------------------
+                        Coef.  Std.Err.   z    P>|z| [0.025 0.975]
+------------------------------------------------------------------
+Intercept                2.465    1.006  2.450 0.014  0.493  4.436
+C(Group_label)[T.wesad] -4.111    1.967 -2.091 0.037 -7.966 -0.257
+Group Var               41.737    1.039                           
+==================================================================
+
+
+Feature: ACC_y_n_sign_changes (calm condition)
+p-value for Group (wesad vs control): 0.0004
+--------------------------------------------------------------------------------
+              Mixed Linear Model Regression Results
+==================================================================
+Model:            MixedLM Dependent Variable: ACC_y_n_sign_changes
+No. Observations: 1608    Method:             REML                
+No. Groups:       62      Scale:              45.7774             
+Min. group size:  6       Log-Likelihood:     -5410.6994          
+Max. group size:  75      Converged:          Yes                 
+Mean group size:  25.9                                            
+------------------------------------------------------------------
+                        Coef.  Std.Err.   z    P>|z| [0.025 0.975]
+------------------------------------------------------------------
+Intercept                1.027    0.594  1.728 0.084 -0.138  2.192
+C(Group_label)[T.wesad] -3.978    1.119 -3.555 0.000 -6.172 -1.785
+Group Var               12.760    0.392                           
+==================================================================
+
+
+Feature: ACC_y_iqr (calm condition)
+p-value for Group (wesad vs control): 0.0016
+--------------------------------------------------------------------------------
+               Mixed Linear Model Regression Results
+===================================================================
+Model:                 MixedLM    Dependent Variable:    ACC_y_iqr 
+No. Observations:      1608       Method:                REML      
+No. Groups:            62         Scale:                 681.0476  
+Min. group size:       6          Log-Likelihood:        -7607.7560
+Max. group size:       75         Converged:             Yes       
+Mean group size:       25.9                                        
+-------------------------------------------------------------------
+                         Coef.  Std.Err.   z    P>|z| [0.025 0.975]
+-------------------------------------------------------------------
+Intercept                -2.130    3.668 -0.581 0.562 -9.319  5.060
+C(Group_label)[T.wesad]  22.815    7.246  3.149 0.002  8.614 37.016
+Group Var               574.766    4.413                           
+===================================================================
+
+
+Feature: ACC_y_iqr (stress condition)
+p-value for Group (wesad vs control): 0.0295
+--------------------------------------------------------------------------------
+                 Mixed Linear Model Regression Results
+========================================================================
+Model:                 MixedLM      Dependent Variable:      ACC_y_iqr  
+No. Observations:      2456         Method:                  REML       
+No. Groups:            62           Scale:                   4659.1249  
+Min. group size:       25           Log-Likelihood:          -14026.2767
+Max. group size:       77           Converged:               Yes        
+Mean group size:       39.6                                             
+------------------------------------------------------------------------
+                          Coef.   Std.Err.   z    P>|z|  [0.025   0.975]
+------------------------------------------------------------------------
+Intercept                  28.403   28.593  0.993 0.321  -27.638  84.443
+C(Group_label)[T.wesad]  -126.556   58.136 -2.177 0.029 -240.501 -12.611
+Group Var               38306.018  104.076                              
+========================================================================
+
+
+Feature: ACC_y_pct_5 (calm condition)
+p-value for Group (wesad vs control): 0.0004
+--------------------------------------------------------------------------------
+              Mixed Linear Model Regression Results
+==================================================================
+Model:               MixedLM    Dependent Variable:    ACC_y_pct_5
+No. Observations:    1608       Method:                REML       
+No. Groups:          62         Scale:                 294.3269   
+Min. group size:     6          Log-Likelihood:        -6932.1248 
+Max. group size:     75         Converged:             Yes        
+Mean group size:     25.9                                         
+------------------------------------------------------------------
+                         Coef.  Std.Err.   z   P>|z| [0.025 0.975]
+------------------------------------------------------------------
+Intercept                 0.837    2.335 0.359 0.720 -3.740  5.415
+C(Group_label)[T.wesad]  16.437    4.604 3.570 0.000  7.413 25.460
+Group Var               231.415    2.646                          
+==================================================================
+
+
+Feature: ACC_y_pct_95 (calm condition)
+p-value for Group (wesad vs control): 0.0002
+--------------------------------------------------------------------------------
+               Mixed Linear Model Regression Results
+===================================================================
+Model:               MixedLM    Dependent Variable:    ACC_y_pct_95
+No. Observations:    1608       Method:                REML        
+No. Groups:          62         Scale:                 370.9103    
+Min. group size:     6          Log-Likelihood:        -7121.6770  
+Max. group size:     75         Converged:             Yes         
+Mean group size:     25.9                                          
+-------------------------------------------------------------------
+                         Coef.  Std.Err.   z    P>|z| [0.025 0.975]
+-------------------------------------------------------------------
+Intercept                -0.764    2.792 -0.274 0.784 -6.236  4.708
+C(Group_label)[T.wesad]  20.431    5.524  3.698 0.000  9.603 31.258
+Group Var               334.916    3.352                           
+===================================================================
+
+
+Feature: ACC_y_perm_entropy (calm condition)
+p-value for Group (wesad vs control): 0.0014
+--------------------------------------------------------------------------------
+               Mixed Linear Model Regression Results
+===================================================================
+Model:             MixedLM  Dependent Variable:  ACC_y_perm_entropy
+No. Observations:  1608     Method:              REML              
+No. Groups:        62       Scale:               701.0350          
+Min. group size:   6        Log-Likelihood:      -7630.4522        
+Max. group size:   75       Converged:           Yes               
+Mean group size:   25.9                                            
+-------------------------------------------------------------------
+                         Coef.  Std.Err.   z    P>|z| [0.025 0.975]
+-------------------------------------------------------------------
+Intercept                -2.614    3.690 -0.708 0.479 -9.845  4.617
+C(Group_label)[T.wesad]  23.300    7.284  3.199 0.001  9.024 37.576
+Group Var               580.420    4.400                           
+===================================================================
+
+
+Feature: ACC_y_perm_entropy (stress condition)
+p-value for Group (wesad vs control): 0.0310
+--------------------------------------------------------------------------------
+                 Mixed Linear Model Regression Results
+========================================================================
+Model:                MixedLM   Dependent Variable:   ACC_y_perm_entropy
+No. Observations:     2456      Method:               REML              
+No. Groups:           62        Scale:                5573.3462         
+Min. group size:      25        Log-Likelihood:       -14240.7890       
+Max. group size:      77        Converged:            Yes               
+Mean group size:      39.6                                              
+------------------------------------------------------------------------
+                          Coef.   Std.Err.   z    P>|z|  [0.025   0.975]
+------------------------------------------------------------------------
+Intercept                  27.324   28.615  0.955 0.340  -28.761  83.409
+C(Group_label)[T.wesad]  -125.477   58.184 -2.157 0.031 -239.515 -11.439
+Group Var               38344.163   95.258                              
+========================================================================
+
+
+Feature: ACC_y_svd_entropy (calm condition)
+p-value for Group (wesad vs control): 0.0014
+--------------------------------------------------------------------------------
+               Mixed Linear Model Regression Results
+===================================================================
+Model:              MixedLM  Dependent Variable:  ACC_y_svd_entropy
+No. Observations:   1608     Method:              REML             
+No. Groups:         62       Scale:               695.4139         
+Min. group size:    6        Log-Likelihood:      -7624.0963       
+Max. group size:    75       Converged:           Yes              
+Mean group size:    25.9                                           
+-------------------------------------------------------------------
+                         Coef.  Std.Err.   z    P>|z| [0.025 0.975]
+-------------------------------------------------------------------
+Intercept                -2.202    3.681 -0.598 0.550 -9.417  5.013
+C(Group_label)[T.wesad]  23.193    7.268  3.191 0.001  8.947 37.438
+Group Var               578.029    4.394                           
+===================================================================
+
+
+Feature: ACC_y_svd_entropy (stress condition)
+p-value for Group (wesad vs control): 0.0310
+--------------------------------------------------------------------------------
+                 Mixed Linear Model Regression Results
+========================================================================
+Model:               MixedLM    Dependent Variable:    ACC_y_svd_entropy
+No. Observations:    2456       Method:                REML             
+No. Groups:          62         Scale:                 4721.4630        
+Min. group size:     25         Log-Likelihood:        -14042.0753      
+Max. group size:     77         Converged:             Yes              
+Mean group size:     39.6                                               
+------------------------------------------------------------------------
+                          Coef.   Std.Err.   z    P>|z|  [0.025   0.975]
+------------------------------------------------------------------------
+Intercept                  29.549   28.540  1.035 0.300  -26.388  85.486
+C(Group_label)[T.wesad]  -125.151   58.029 -2.157 0.031 -238.886 -11.416
+Group Var               38162.665  103.006                              
+========================================================================
+
+
+Feature: ACC_z_max (calm condition)
+p-value for Group (wesad vs control): 0.0016
+--------------------------------------------------------------------------------
+               Mixed Linear Model Regression Results
+===================================================================
+Model:                 MixedLM    Dependent Variable:    ACC_z_max 
+No. Observations:      1608       Method:                REML      
+No. Groups:            62         Scale:                 680.9903  
+Min. group size:       6          Log-Likelihood:        -7607.6861
+Max. group size:       75         Converged:             Yes       
+Mean group size:       25.9                                        
+-------------------------------------------------------------------
+                         Coef.  Std.Err.   z    P>|z| [0.025 0.975]
+-------------------------------------------------------------------
+Intercept                -2.129    3.668 -0.580 0.562 -9.318  5.060
+C(Group_label)[T.wesad]  22.816    7.245  3.149 0.002  8.616 37.016
+Group Var               574.669    4.412                           
+===================================================================
+
+
+Feature: ACC_z_max (stress condition)
+p-value for Group (wesad vs control): 0.0295
+--------------------------------------------------------------------------------
+                 Mixed Linear Model Regression Results
+========================================================================
+Model:                 MixedLM      Dependent Variable:      ACC_z_max  
+No. Observations:      2456         Method:                  REML       
+No. Groups:            62           Scale:                   4658.4322  
+Min. group size:       25           Log-Likelihood:          -14026.0948
+Max. group size:       77           Converged:               Yes        
+Mean group size:       39.6                                             
+------------------------------------------------------------------------
+                          Coef.   Std.Err.   z    P>|z|  [0.025   0.975]
+------------------------------------------------------------------------
+Intercept                  28.401   28.591  0.993 0.321  -27.636  84.437
+C(Group_label)[T.wesad]  -126.548   58.132 -2.177 0.029 -240.485 -12.610
+Group Var               38300.990  104.070                              
+========================================================================
+
+
+Feature: ACC_z_rms (calm condition)
+p-value for Group (wesad vs control): 0.0011
+--------------------------------------------------------------------------------
+               Mixed Linear Model Regression Results
+===================================================================
+Model:                 MixedLM    Dependent Variable:    ACC_z_rms 
+No. Observations:      1608       Method:                REML      
+No. Groups:            62         Scale:                 308.8345  
+Min. group size:       6          Log-Likelihood:        -6979.2737
+Max. group size:       75         Converged:             Yes       
+Mean group size:       25.9                                        
+-------------------------------------------------------------------
+                         Coef.  Std.Err.   z    P>|z| [0.025 0.975]
+-------------------------------------------------------------------
+Intercept                -0.462    2.750 -0.168 0.867 -5.852  4.929
+C(Group_label)[T.wesad]  17.762    5.464  3.251 0.001  7.054 28.471
+Group Var               329.364    3.656                           
+===================================================================
+
+
+Feature: ACC_z_lineintegral (calm condition)
+p-value for Group (wesad vs control): 0.0000
+--------------------------------------------------------------------------------
+               Mixed Linear Model Regression Results
+===================================================================
+Model:             MixedLM  Dependent Variable:  ACC_z_lineintegral
+No. Observations:  1608     Method:              REML              
+No. Groups:        62       Scale:               294.9222          
+Min. group size:   6        Log-Likelihood:      -6930.9492        
+Max. group size:   75       Converged:           Yes               
+Mean group size:   25.9                                            
+-------------------------------------------------------------------
+                         Coef.  Std.Err.   z    P>|z| [0.025 0.975]
+-------------------------------------------------------------------
+Intercept                -0.136    2.233 -0.061 0.952 -4.513  4.242
+C(Group_label)[T.wesad]  21.081    4.389  4.803 0.000 12.478 29.684
+Group Var               209.459    2.359                           
+===================================================================
+
+
+Feature: ACC_z_iqr (calm condition)
+p-value for Group (wesad vs control): 0.0016
+--------------------------------------------------------------------------------
+               Mixed Linear Model Regression Results
+===================================================================
+Model:                 MixedLM    Dependent Variable:    ACC_z_iqr 
+No. Observations:      1608       Method:                REML      
+No. Groups:            62         Scale:                 681.0476  
+Min. group size:       6          Log-Likelihood:        -7607.7560
+Max. group size:       75         Converged:             Yes       
+Mean group size:       25.9                                        
+-------------------------------------------------------------------
+                         Coef.  Std.Err.   z    P>|z| [0.025 0.975]
+-------------------------------------------------------------------
+Intercept                -2.130    3.668 -0.581 0.562 -9.319  5.060
+C(Group_label)[T.wesad]  22.815    7.246  3.149 0.002  8.614 37.016
+Group Var               574.766    4.413                           
+===================================================================
+
+
+Feature: ACC_z_iqr (stress condition)
+p-value for Group (wesad vs control): 0.0295
+--------------------------------------------------------------------------------
+                 Mixed Linear Model Regression Results
+========================================================================
+Model:                 MixedLM      Dependent Variable:      ACC_z_iqr  
+No. Observations:      2456         Method:                  REML       
+No. Groups:            62           Scale:                   4659.1249  
+Min. group size:       25           Log-Likelihood:          -14026.2767
+Max. group size:       77           Converged:               Yes        
+Mean group size:       39.6                                             
+------------------------------------------------------------------------
+                          Coef.   Std.Err.   z    P>|z|  [0.025   0.975]
+------------------------------------------------------------------------
+Intercept                  28.403   28.593  0.993 0.321  -27.638  84.443
+C(Group_label)[T.wesad]  -126.556   58.136 -2.177 0.029 -240.501 -12.611
+Group Var               38306.018  104.076                              
+========================================================================
+
+
+Feature: ACC_z_pct_5 (calm condition)
+p-value for Group (wesad vs control): 0.0004
+--------------------------------------------------------------------------------
+              Mixed Linear Model Regression Results
+==================================================================
+Model:               MixedLM    Dependent Variable:    ACC_z_pct_5
+No. Observations:    1608       Method:                REML       
+No. Groups:          62         Scale:                 294.3269   
+Min. group size:     6          Log-Likelihood:        -6932.1248 
+Max. group size:     75         Converged:             Yes        
+Mean group size:     25.9                                         
+------------------------------------------------------------------
+                         Coef.  Std.Err.   z   P>|z| [0.025 0.975]
+------------------------------------------------------------------
+Intercept                 0.837    2.335 0.359 0.720 -3.740  5.415
+C(Group_label)[T.wesad]  16.437    4.604 3.570 0.000  7.413 25.460
+Group Var               231.415    2.646                          
+==================================================================
+
+
+Feature: ACC_z_pct_95 (calm condition)
+p-value for Group (wesad vs control): 0.0002
+--------------------------------------------------------------------------------
+               Mixed Linear Model Regression Results
+===================================================================
+Model:               MixedLM    Dependent Variable:    ACC_z_pct_95
+No. Observations:    1608       Method:                REML        
+No. Groups:          62         Scale:                 370.9103    
+Min. group size:     6          Log-Likelihood:        -7121.6770  
+Max. group size:     75         Converged:             Yes         
+Mean group size:     25.9                                          
+-------------------------------------------------------------------
+                         Coef.  Std.Err.   z    P>|z| [0.025 0.975]
+-------------------------------------------------------------------
+Intercept                -0.764    2.792 -0.274 0.784 -6.236  4.708
+C(Group_label)[T.wesad]  20.431    5.524  3.698 0.000  9.603 31.258
+Group Var               334.916    3.352                           
+===================================================================
+
+
+Feature: ACC_z_perm_entropy (calm condition)
+p-value for Group (wesad vs control): 0.0014
+--------------------------------------------------------------------------------
+               Mixed Linear Model Regression Results
+===================================================================
+Model:             MixedLM  Dependent Variable:  ACC_z_perm_entropy
+No. Observations:  1608     Method:              REML              
+No. Groups:        62       Scale:               701.0350          
+Min. group size:   6        Log-Likelihood:      -7630.4522        
+Max. group size:   75       Converged:           Yes               
+Mean group size:   25.9                                            
+-------------------------------------------------------------------
+                         Coef.  Std.Err.   z    P>|z| [0.025 0.975]
+-------------------------------------------------------------------
+Intercept                -2.614    3.690 -0.708 0.479 -9.845  4.617
+C(Group_label)[T.wesad]  23.300    7.284  3.199 0.001  9.024 37.576
+Group Var               580.420    4.400                           
+===================================================================
+
+
+Feature: ACC_z_perm_entropy (stress condition)
+p-value for Group (wesad vs control): 0.0310
+--------------------------------------------------------------------------------
+                 Mixed Linear Model Regression Results
+========================================================================
+Model:                MixedLM   Dependent Variable:   ACC_z_perm_entropy
+No. Observations:     2456      Method:               REML              
+No. Groups:           62        Scale:                5573.3462         
+Min. group size:      25        Log-Likelihood:       -14240.7890       
+Max. group size:      77        Converged:            Yes               
+Mean group size:      39.6                                              
+------------------------------------------------------------------------
+                          Coef.   Std.Err.   z    P>|z|  [0.025   0.975]
+------------------------------------------------------------------------
+Intercept                  27.324   28.615  0.955 0.340  -28.761  83.409
+C(Group_label)[T.wesad]  -125.477   58.184 -2.157 0.031 -239.515 -11.439
+Group Var               38344.163   95.258                              
+========================================================================
+
+
+Feature: ACC_z_svd_entropy (calm condition)
+p-value for Group (wesad vs control): 0.0014
+--------------------------------------------------------------------------------
+               Mixed Linear Model Regression Results
+===================================================================
+Model:              MixedLM  Dependent Variable:  ACC_z_svd_entropy
+No. Observations:   1608     Method:              REML             
+No. Groups:         62       Scale:               695.4139         
+Min. group size:    6        Log-Likelihood:      -7624.0963       
+Max. group size:    75       Converged:           Yes              
+Mean group size:    25.9                                           
+-------------------------------------------------------------------
+                         Coef.  Std.Err.   z    P>|z| [0.025 0.975]
+-------------------------------------------------------------------
+Intercept                -2.202    3.681 -0.598 0.550 -9.417  5.013
+C(Group_label)[T.wesad]  23.193    7.268  3.191 0.001  8.947 37.438
+Group Var               578.029    4.394                           
+===================================================================
+
+
+Feature: ACC_z_svd_entropy (stress condition)
+p-value for Group (wesad vs control): 0.0310
+--------------------------------------------------------------------------------
+                 Mixed Linear Model Regression Results
+========================================================================
+Model:               MixedLM    Dependent Variable:    ACC_z_svd_entropy
+No. Observations:    2456       Method:                REML             
+No. Groups:          62         Scale:                 4721.4630        
+Min. group size:     25         Log-Likelihood:        -14042.0753      
+Max. group size:     77         Converged:             Yes              
+Mean group size:     39.6                                               
+------------------------------------------------------------------------
+                          Coef.   Std.Err.   z    P>|z|  [0.025   0.975]
+------------------------------------------------------------------------
+Intercept                  29.549   28.540  1.035 0.300  -26.388  85.486
+C(Group_label)[T.wesad]  -125.151   58.029 -2.157 0.031 -238.886 -11.416
+Group Var               38162.665  103.006                              
+========================================================================
+
+
+Feature: ACC_l2_max (calm condition)
+p-value for Group (wesad vs control): 0.0016
+--------------------------------------------------------------------------------
+               Mixed Linear Model Regression Results
+===================================================================
+Model:                 MixedLM    Dependent Variable:    ACC_l2_max
+No. Observations:      1608       Method:                REML      
+No. Groups:            62         Scale:                 680.9903  
+Min. group size:       6          Log-Likelihood:        -7607.6861
+Max. group size:       75         Converged:             Yes       
+Mean group size:       25.9                                        
+-------------------------------------------------------------------
+                         Coef.  Std.Err.   z    P>|z| [0.025 0.975]
+-------------------------------------------------------------------
+Intercept                -2.129    3.668 -0.580 0.562 -9.318  5.060
+C(Group_label)[T.wesad]  22.816    7.245  3.149 0.002  8.616 37.016
+Group Var               574.669    4.412                           
+===================================================================
+
+
+Feature: ACC_l2_max (stress condition)
+p-value for Group (wesad vs control): 0.0295
+--------------------------------------------------------------------------------
+                 Mixed Linear Model Regression Results
+========================================================================
+Model:                 MixedLM      Dependent Variable:      ACC_l2_max 
+No. Observations:      2456         Method:                  REML       
+No. Groups:            62           Scale:                   4658.4322  
+Min. group size:       25           Log-Likelihood:          -14026.0948
+Max. group size:       77           Converged:               Yes        
+Mean group size:       39.6                                             
+------------------------------------------------------------------------
+                          Coef.   Std.Err.   z    P>|z|  [0.025   0.975]
+------------------------------------------------------------------------
+Intercept                  28.401   28.591  0.993 0.321  -27.636  84.437
+C(Group_label)[T.wesad]  -126.548   58.132 -2.177 0.029 -240.485 -12.610
+Group Var               38300.990  104.070                              
+========================================================================
+
+
+Feature: ACC_l2_rms (calm condition)
+p-value for Group (wesad vs control): 0.0011
+--------------------------------------------------------------------------------
+               Mixed Linear Model Regression Results
+===================================================================
+Model:                 MixedLM    Dependent Variable:    ACC_l2_rms
+No. Observations:      1608       Method:                REML      
+No. Groups:            62         Scale:                 308.8345  
+Min. group size:       6          Log-Likelihood:        -6979.2737
+Max. group size:       75         Converged:             Yes       
+Mean group size:       25.9                                        
+-------------------------------------------------------------------
+                         Coef.  Std.Err.   z    P>|z| [0.025 0.975]
+-------------------------------------------------------------------
+Intercept                -0.462    2.750 -0.168 0.867 -5.852  4.929
+C(Group_label)[T.wesad]  17.762    5.464  3.251 0.001  7.054 28.471
+Group Var               329.364    3.656                           
+===================================================================
+
+
+Feature: ACC_l2_lineintegral (calm condition)
+p-value for Group (wesad vs control): 0.0000
+--------------------------------------------------------------------------------
+               Mixed Linear Model Regression Results
+===================================================================
+Model:              MixedLM Dependent Variable: ACC_l2_lineintegral
+No. Observations:   1608    Method:             REML               
+No. Groups:         62      Scale:              294.9222           
+Min. group size:    6       Log-Likelihood:     -6930.9492         
+Max. group size:    75      Converged:          Yes                
+Mean group size:    25.9                                           
+-------------------------------------------------------------------
+                         Coef.  Std.Err.   z    P>|z| [0.025 0.975]
+-------------------------------------------------------------------
+Intercept                -0.136    2.233 -0.061 0.952 -4.513  4.242
+C(Group_label)[T.wesad]  21.081    4.389  4.803 0.000 12.478 29.684
+Group Var               209.459    2.359                           
+===================================================================
+
+
+Feature: HRV_MeanNN (calm condition)
+p-value for Group (wesad vs control): 0.0001
+--------------------------------------------------------------------------------
+              Mixed Linear Model Regression Results
+==================================================================
+Model:                MixedLM    Dependent Variable:    HRV_MeanNN
+No. Observations:     1608       Method:                REML      
+No. Groups:           62         Scale:                 3.3672    
+Min. group size:      6          Log-Likelihood:        -3286.7316
+Max. group size:      75         Converged:             Yes       
+Mean group size:      25.9                                        
+------------------------------------------------------------------
+                        Coef.  Std.Err.   z    P>|z| [0.025 0.975]
+------------------------------------------------------------------
+Intercept                0.468    0.105  4.472 0.000  0.263  0.673
+C(Group_label)[T.wesad] -0.683    0.174 -3.932 0.000 -1.024 -0.343
+Group Var                0.236    0.038                           
+==================================================================
+
+
+Feature: HRV_MeanNN (stress condition)
+p-value for Group (wesad vs control): 0.0076
+--------------------------------------------------------------------------------
+              Mixed Linear Model Regression Results
+==================================================================
+Model:                MixedLM    Dependent Variable:    HRV_MeanNN
+No. Observations:     2456       Method:                REML      
+No. Groups:           62         Scale:                 4.0437    
+Min. group size:      25         Log-Likelihood:        -5264.9790
+Max. group size:      77         Converged:             Yes       
+Mean group size:      39.6                                        
+------------------------------------------------------------------
+                        Coef.  Std.Err.   z    P>|z| [0.025 0.975]
+------------------------------------------------------------------
+Intercept                0.665    0.131  5.082 0.000  0.408  0.921
+C(Group_label)[T.wesad] -0.713    0.267 -2.667 0.008 -1.236 -0.189
+Group Var                0.702    0.075                           
+==================================================================
+
+
+Feature: HRV_CVSD (calm condition)
+p-value for Group (wesad vs control): 0.0080
+--------------------------------------------------------------------------------
+              Mixed Linear Model Regression Results
+==================================================================
+Model:                MixedLM    Dependent Variable:    HRV_CVSD  
+No. Observations:     1608       Method:                REML      
+No. Groups:           62         Scale:                 4.5400    
+Min. group size:      6          Log-Likelihood:        -3523.3009
+Max. group size:      75         Converged:             Yes       
+Mean group size:      25.9                                        
+------------------------------------------------------------------
+                        Coef.  Std.Err.   z    P>|z| [0.025 0.975]
+------------------------------------------------------------------
+Intercept               -0.337    0.116 -2.911 0.004 -0.564 -0.110
+C(Group_label)[T.wesad]  0.497    0.187  2.652 0.008  0.130  0.865
+Group Var                0.256    0.036                           
+==================================================================
+
+
+Feature: HRV_MedianNN (calm condition)
+p-value for Group (wesad vs control): 0.0080
+--------------------------------------------------------------------------------
+              Mixed Linear Model Regression Results
+==================================================================
+Model:                MixedLM   Dependent Variable:   HRV_MedianNN
+No. Observations:     1608      Method:               REML        
+No. Groups:           62        Scale:                4.5400      
+Min. group size:      6         Log-Likelihood:       -3523.3009  
+Max. group size:      75        Converged:            Yes         
+Mean group size:      25.9                                        
+------------------------------------------------------------------
+                        Coef.  Std.Err.   z    P>|z| [0.025 0.975]
+------------------------------------------------------------------
+Intercept                0.337    0.116  2.911 0.004  0.110  0.564
+C(Group_label)[T.wesad] -0.497    0.187 -2.652 0.008 -0.865 -0.130
+Group Var                0.256    0.036                           
+==================================================================
+
+
+Feature: HRV_pNN50 (calm condition)
+p-value for Group (wesad vs control): 0.0241
+--------------------------------------------------------------------------------
+               Mixed Linear Model Regression Results
+====================================================================
+Model:                MixedLM     Dependent Variable:     HRV_pNN50 
+No. Observations:     1608        Method:                 REML      
+No. Groups:           62          Scale:                  440.5013  
+Min. group size:      6           Log-Likelihood:         -7244.5763
+Max. group size:      75          Converged:              Yes       
+Mean group size:      25.9                                          
+--------------------------------------------------------------------
+                         Coef.  Std.Err.   z    P>|z|  [0.025 0.975]
+--------------------------------------------------------------------
+Intercept                -2.332    2.376 -0.982 0.326  -6.988  2.324
+C(Group_label)[T.wesad] -10.414    4.617 -2.256 0.024 -19.463 -1.365
+Group Var               228.029    2.189                            
+====================================================================
+
+
+Feature: HRV_pNN20 (calm condition)
+p-value for Group (wesad vs control): 0.0443
+--------------------------------------------------------------------------------
+              Mixed Linear Model Regression Results
+==================================================================
+Model:                MixedLM    Dependent Variable:    HRV_pNN20 
+No. Observations:     1608       Method:                REML      
+No. Groups:           62         Scale:                 6.1383    
+Min. group size:      6          Log-Likelihood:        -3843.4734
+Max. group size:      75         Converged:             Yes       
+Mean group size:      25.9                                        
+------------------------------------------------------------------
+                        Coef.  Std.Err.   z    P>|z| [0.025 0.975]
+------------------------------------------------------------------
+Intercept               -0.161    0.461 -0.349 0.727 -1.065  0.743
+C(Group_label)[T.wesad] -1.856    0.923 -2.011 0.044 -3.665 -0.047
+Group Var                9.487    0.747                           
+==================================================================
+
+
+Feature: HRV_TP (calm condition)
+p-value for Group (wesad vs control): 0.0001
+--------------------------------------------------------------------------------
+              Mixed Linear Model Regression Results
+==================================================================
+Model:                MixedLM    Dependent Variable:    HRV_TP    
+No. Observations:     1608       Method:                REML      
+No. Groups:           62         Scale:                 3.3672    
+Min. group size:      6          Log-Likelihood:        -3286.7316
+Max. group size:      75         Converged:             Yes       
+Mean group size:      25.9                                        
+------------------------------------------------------------------
+                        Coef.  Std.Err.   z    P>|z| [0.025 0.975]
+------------------------------------------------------------------
+Intercept                0.468    0.105  4.472 0.000  0.263  0.673
+C(Group_label)[T.wesad] -0.683    0.174 -3.932 0.000 -1.024 -0.343
+Group Var                0.236    0.038                           
+==================================================================
+
+
+Feature: HRV_TP (stress condition)
+p-value for Group (wesad vs control): 0.0076
+--------------------------------------------------------------------------------
+              Mixed Linear Model Regression Results
+==================================================================
+Model:                MixedLM    Dependent Variable:    HRV_TP    
+No. Observations:     2456       Method:                REML      
+No. Groups:           62         Scale:                 4.0446    
+Min. group size:      25         Log-Likelihood:        -5265.2702
+Max. group size:      77         Converged:             Yes       
+Mean group size:      39.6                                        
+------------------------------------------------------------------
+                        Coef.  Std.Err.   z    P>|z| [0.025 0.975]
+------------------------------------------------------------------
+Intercept                0.666    0.131  5.085 0.000  0.409  0.922
+C(Group_label)[T.wesad] -0.713    0.267 -2.669 0.008 -1.237 -0.189
+Group Var                0.703    0.075                           
+==================================================================
+
+
+Feature: Tonic_tonic_mean (calm condition)
+p-value for Group (wesad vs control): 0.0080
+--------------------------------------------------------------------------------
+              Mixed Linear Model Regression Results
+==================================================================
+Model:              MixedLM  Dependent Variable:  Tonic_tonic_mean
+No. Observations:   1608     Method:              REML            
+No. Groups:         62       Scale:               4.5400          
+Min. group size:    6        Log-Likelihood:      -3523.3009      
+Max. group size:    75       Converged:           Yes             
+Mean group size:    25.9                                          
+------------------------------------------------------------------
+                        Coef.  Std.Err.   z    P>|z| [0.025 0.975]
+------------------------------------------------------------------
+Intercept               -0.337    0.116 -2.911 0.004 -0.564 -0.110
+C(Group_label)[T.wesad]  0.497    0.187  2.652 0.008  0.130  0.865
+Group Var                0.256    0.036                           
+==================================================================
+
+
+Feature: Tonic_tonic_std (calm condition)
+p-value for Group (wesad vs control): 0.0080
+--------------------------------------------------------------------------------
+              Mixed Linear Model Regression Results
+==================================================================
+Model:               MixedLM  Dependent Variable:  Tonic_tonic_std
+No. Observations:    1608     Method:              REML           
+No. Groups:          62       Scale:               4.5400         
+Min. group size:     6        Log-Likelihood:      -3523.3009     
+Max. group size:     75       Converged:           Yes            
+Mean group size:     25.9                                         
+------------------------------------------------------------------
+                        Coef.  Std.Err.   z    P>|z| [0.025 0.975]
+------------------------------------------------------------------
+Intercept                0.337    0.116  2.911 0.004  0.110  0.564
+C(Group_label)[T.wesad] -0.497    0.187 -2.652 0.008 -0.865 -0.130
+Group Var                0.256    0.036                           
+==================================================================
+
+
+Feature: Tonic_tonic_kurtosis (calm condition)
+p-value for Group (wesad vs control): 0.0241
+--------------------------------------------------------------------------------
+               Mixed Linear Model Regression Results
+====================================================================
+Model:              MixedLM Dependent Variable: Tonic_tonic_kurtosis
+No. Observations:   1608    Method:             REML                
+No. Groups:         62      Scale:              440.5013            
+Min. group size:    6       Log-Likelihood:     -7244.5763          
+Max. group size:    75      Converged:          Yes                 
+Mean group size:    25.9                                            
+--------------------------------------------------------------------
+                         Coef.  Std.Err.   z    P>|z|  [0.025 0.975]
+--------------------------------------------------------------------
+Intercept                -2.332    2.376 -0.982 0.326  -6.988  2.324
+C(Group_label)[T.wesad] -10.414    4.617 -2.256 0.024 -19.463 -1.365
+Group Var               228.029    2.189                            
+====================================================================
+
+
+Feature: Tonic_tonic_peaks (calm condition)
+p-value for Group (wesad vs control): 0.0443
+--------------------------------------------------------------------------------
+              Mixed Linear Model Regression Results
+==================================================================
+Model:             MixedLM  Dependent Variable:  Tonic_tonic_peaks
+No. Observations:  1608     Method:              REML             
+No. Groups:        62       Scale:               6.1383           
+Min. group size:   6        Log-Likelihood:      -3843.4734       
+Max. group size:   75       Converged:           Yes              
+Mean group size:   25.9                                           
+------------------------------------------------------------------
+                        Coef.  Std.Err.   z    P>|z| [0.025 0.975]
+------------------------------------------------------------------
+Intercept               -0.161    0.461 -0.349 0.727 -1.065  0.743
+C(Group_label)[T.wesad] -1.856    0.923 -2.011 0.044 -3.665 -0.047
+Group Var                9.487    0.747                           
+==================================================================
+
+
+Feature: Tonic_l2_min (calm condition)
+p-value for Group (wesad vs control): 0.0044
+--------------------------------------------------------------------------------
+              Mixed Linear Model Regression Results
+=================================================================
+Model:               MixedLM   Dependent Variable:   Tonic_l2_min
+No. Observations:    1608      Method:               REML        
+No. Groups:          62        Scale:                30.5427     
+Min. group size:     6         Log-Likelihood:       -5124.5805  
+Max. group size:     75        Converged:            Yes         
+Mean group size:     25.9                                        
+-----------------------------------------------------------------
+                        Coef.  Std.Err.   z   P>|z| [0.025 0.975]
+-----------------------------------------------------------------
+Intercept                0.918    0.912 1.007 0.314 -0.869  2.704
+C(Group_label)[T.wesad]  5.168    1.815 2.847 0.004  1.610  8.725
+Group Var               36.463    1.272                          
+=================================================================
+
+
+Feature: Phasic_phasic_n_below_mean (calm condition)
+p-value for Group (wesad vs control): 0.0492
+--------------------------------------------------------------------------------
+                 Mixed Linear Model Regression Results
+========================================================================
+Model:            MixedLM Dependent Variable: Phasic_phasic_n_below_mean
+No. Observations: 1608    Method:             REML                      
+No. Groups:       62      Scale:              67.2784                   
+Min. group size:  6       Log-Likelihood:     -5735.2418                
+Max. group size:  75      Converged:          Yes                       
+Mean group size:  25.9                                                  
+-------------------------------------------------------------------------
+                          Coef.   Std.Err.    z     P>|z|  [0.025  0.975]
+-------------------------------------------------------------------------
+Intercept                  3.874     0.922   4.203  0.000   2.068   5.681
+C(Group_label)[T.wesad]   -3.522     1.790  -1.967  0.049  -7.031  -0.013
+Group Var                 34.257     0.902                               
+========================================================================
+
+
+Feature: Phasic_phasic_n_sign_changes (calm condition)
+p-value for Group (wesad vs control): 0.0305
+--------------------------------------------------------------------------------
+                  Mixed Linear Model Regression Results
+==========================================================================
+Model:            MixedLM Dependent Variable: Phasic_phasic_n_sign_changes
+No. Observations: 1608    Method:             REML                        
+No. Groups:       62      Scale:              56.0961                     
+Min. group size:  6       Log-Likelihood:     -5593.2126                  
+Max. group size:  75      Converged:          Yes                         
+Mean group size:  25.9                                                    
+---------------------------------------------------------------------------
+                            Coef.   Std.Err.    z     P>|z|  [0.025  0.975]
+---------------------------------------------------------------------------
+Intercept                    4.020     0.897   4.480  0.000   2.261   5.779
+C(Group_label)[T.wesad]     -3.791     1.752  -2.163  0.031  -7.226  -0.356
+Group Var                   33.093     0.936                               
+==========================================================================
+
+
+Feature: Phasic_l2_min (stress condition)
+p-value for Group (wesad vs control): 0.0021
+--------------------------------------------------------------------------------
+               Mixed Linear Model Regression Results
+====================================================================
+Model:               MixedLM    Dependent Variable:    Phasic_l2_min
+No. Observations:    2456       Method:                REML         
+No. Groups:          62         Scale:                 728.8731     
+Min. group size:     25         Log-Likelihood:        -11661.2657  
+Max. group size:     77         Converged:             Yes          
+Mean group size:     39.6                                           
+--------------------------------------------------------------------
+                         Coef.  Std.Err.   z    P>|z|  [0.025 0.975]
+--------------------------------------------------------------------
+Intercept                 7.498    2.572  2.915 0.004   2.457 12.539
+C(Group_label)[T.wesad] -16.128    5.239 -3.078 0.002 -26.396 -5.859
+Group Var               292.435    2.135                            
+====================================================================
+
+
+Feature: Phasic_l2_skewness (stress condition)
+p-value for Group (wesad vs control): 0.0092
+--------------------------------------------------------------------------------
+               Mixed Linear Model Regression Results
+===================================================================
+Model:             MixedLM  Dependent Variable:  Phasic_l2_skewness
+No. Observations:  2456     Method:              REML              
+No. Groups:        62       Scale:               101.0516          
+Min. group size:   25       Log-Likelihood:      -9256.4475        
+Max. group size:   77       Converged:           Yes               
+Mean group size:   39.6                                            
+-------------------------------------------------------------------
+                        Coef.  Std.Err.   z    P>|z|  [0.025 0.975]
+-------------------------------------------------------------------
+Intercept                1.996    1.327  1.504 0.133  -0.605  4.598
+C(Group_label)[T.wesad] -7.039    2.701 -2.606 0.009 -12.333 -1.744
+Group Var               80.250    1.518                            
+===================================================================
+
+
+Feature: Phasic_l2_n_above_mean (stress condition)
+p-value for Group (wesad vs control): 0.0461
+--------------------------------------------------------------------------------
+               Mixed Linear Model Regression Results
+====================================================================
+Model:            MixedLM Dependent Variable: Phasic_l2_n_above_mean
+No. Observations: 2456    Method:             REML                  
+No. Groups:       62      Scale:              1353.0294             
+Min. group size:  25      Log-Likelihood:     -12450.9443           
+Max. group size:  77      Converged:          Yes                   
+Mean group size:  39.6                                              
+--------------------------------------------------------------------
+                          Coef.   Std.Err.   z   P>|z| [0.025 0.975]
+--------------------------------------------------------------------
+Intercept                   5.555    5.843 0.951 0.342 -5.897 17.007
+C(Group_label)[T.wesad]    23.706   11.887 1.994 0.046  0.408 47.005
+Group Var                1570.295    8.097                          
+====================================================================
+
+
+
+WARNING: The following feature-task combinations did not converge:
+Feature: BVP_l2_skewness | Task: calm -> Model did not converge.
+Feature: BVP_l2_skewness | Task: stress -> Model did not converge.
+Feature: HR_HR_mean | Task: stress -> Model did not converge.
+Feature: TEMP_TEMP_iqr | Task: stress -> Model did not converge.
+Feature: TEMP_l2_skewness | Task: calm -> Model did not converge.
+Feature: TEMP_l2_skewness | Task: stress -> Model did not converge.
+Feature: ACC_x_skewness | Task: calm -> Model did not converge.
+Feature: ACC_x_skewness | Task: stress -> Model did not converge.
+Feature: ACC_y_skewness | Task: calm -> Model did not converge.
+Feature: ACC_y_skewness | Task: stress -> Model did not converge.
+Feature: ACC_z_min | Task: calm -> Model did not converge.
+Feature: ACC_z_min | Task: stress -> Model did not converge.
+Feature: ACC_z_skewness | Task: calm -> Model did not converge.
+Feature: ACC_z_skewness | Task: stress -> Model did not converge.
+Feature: ACC_l2_min | Task: calm -> Model did not converge.
+Feature: ACC_l2_min | Task: stress -> Model did not converge.
+Feature: ACC_l2_skewness | Task: calm -> Model did not converge.
+Feature: ACC_l2_skewness | Task: stress -> Model did not converge.
+Feature: HRV_RMSSD | Task: calm -> Model did not converge.
+Feature: HRV_MadNN | Task: calm -> Model did not converge.
+Feature: HRV_LFn | Task: calm -> Model did not converge.
+Feature: Tonic_tonic_min | Task: calm -> Model did not converge.
+Feature: Tonic_tonic_min | Task: stress -> Model did not converge.
+Feature: Phasic_phasic_std | Task: calm -> Model did not converge.
+Feature: Phasic_phasic_std | Task: stress -> Model did not converge.
