@@ -8,7 +8,7 @@ myutils.py contains utility functions for change score normalization.<br/>
 overparameterized.py includes the code to train the overparameterized IRM model.<br/>
 preprocess.py includes the code to extract feature from raw signals.<br/>
 prune_utils.py provides utility functions for subject-wise pruning.<br/>
-
+The stats_analysis folder contains the Jupyter Notebook, lmm_oud.ipynb, which analyzes extracted features using a Linear Mixed Effects Model (LMM) to perform pairwise comparisons between datasets and identify significant features that differentiate between stress and calm tasks.
 
 
 The ckpt folder holds the checkpoints for the pre-trained HHISS model and the overparameterized IRM model, as outlined in Algorithm 1 of the main paper.
